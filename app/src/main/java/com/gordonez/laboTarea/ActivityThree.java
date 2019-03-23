@@ -8,9 +8,9 @@ import android.widget.EditText;
 
 public class ActivityThree extends AppCompatActivity {
 
+
     private EditText mEdit;
     private Button mButton;
-}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +24,14 @@ public class ActivityThree extends AppCompatActivity {
         mButton = findViewById(R.id.b_submit);
 
 
-        mButton.setOnClickListener(v ->{
+        mButton.setOnClickListener(v -> {
             Intent mIntent = new Intent();
 
             String textNombre = mEdit.getText().toString();
             String textApellido = mButton.getText().toString();
             String textEmail = mEdit.getText().toString();
 
-            if(mIntent != null){
+            if (mIntent != null) {
                 mIntent.putExtra(Intent.EXTRA_TEXT, textNombre);
                 mIntent.putExtra(Intent.EXTRA_TEXT, textApellido);
                 mIntent.putExtra(Intent.EXTRA_TEXT, textEmail);
@@ -41,4 +41,5 @@ public class ActivityThree extends AppCompatActivity {
 
 
         });
+    }
 }
