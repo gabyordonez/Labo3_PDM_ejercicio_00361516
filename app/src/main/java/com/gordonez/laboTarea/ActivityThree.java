@@ -17,8 +17,8 @@ public class ActivityThree extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mEdit = findViewById(R.id.et_nombre);
-        mEdit = findViewById(R.id.et_apellido);
+        mEdit = findViewById(R.id.et_username);
+        mEdit = findViewById(R.id.et_password);
         mEdit = findViewById(R.id.et_email);
 
         mButton = findViewById(R.id.b_submit);
